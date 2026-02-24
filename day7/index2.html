@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .circle{
+            width: 400px;
+            height: 400px;
+            background: blue;
+            border-radius: 50%;
+            animation: bounce 4s infinite;
+            animation-timing-function: ease-out;
+        }
+
+        .circle2{
+            width: 400px;
+            height: 400px;
+            background: rgb(25, 210, 132);
+            border-radius: 50%;
+            animation: bounce2 4s infinite;
+            animation-timing-function: ease-out;
+            margin-left: 700px;
+
+        }
+
+        @keyframes bounce{
+            0%{
+                transform:translateY(0px);
+
+            }
+
+
+            100%{ 
+                transform: translateY(500px);
+            }
+        }
+         @keyframes bounce2{
+            0%{
+                transform:translateY(0px);
+
+            }
+
+
+            100%{ 
+                transform: translateY(500px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="circle"></div>
+    <div class="circle2"></div>
+</body>
+</html>

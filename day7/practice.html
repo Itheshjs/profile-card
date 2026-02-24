@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 80px;
+            height: 80px;
+            background: green;
+            animation: colorchange 4s infinite , bounce 2s infinite;
+            margin: auto;
+            border-radius: 50%;
+        }
+
+        .box:hover{
+            width: 80px;
+            height: 80px;
+            background-color: blue;
+            border-radius: 50%;
+            box-shadow: 0px 0px 80px red;
+        }
+
+        @keyframes colorchange{
+            0%{
+                background-color: yellow;
+            }
+            25%{
+                background-color: rgb(3, 76, 76);
+            }
+            50%{
+                background-color: rgb(32, 8, 135);
+            }
+            75%{
+                background-color: rgb(53, 3, 100);
+            }
+            100%{
+                background-color: aqua;
+            }
+        }
+
+        @keyframes bounce{
+           0%{
+            transform: translateY(0px);
+           }
+           25%{
+            transform: translateY(800px);
+
+           }
+           40%{
+            transform: translateY(50px);
+           }
+           60%{
+            transform: translateY(800px);
+           }
+           70%{
+           transform: translateY(100px);
+           }
+           80%{
+            transform: translateY(800px);
+           }
+           100%{
+            transform: translateY(500px);
+           }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    
+</body>
+</html>

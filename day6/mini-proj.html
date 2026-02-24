@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mini Projects - Hover + Transition</title>
+
+<style>
+
+body{
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+  margin: 0;
+  padding: 30px;
+}
+
+h1{
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+h2{
+  margin-top: 50px;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.section{
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
+  margin-bottom: 40px;
+}
+
+/* ---------------- Button Section ---------------- */
+
+.btn-box{
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.btn{
+  padding: 12px 25px;
+  border: none;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.4s;
+  color: white;
+}
+
+.one{
+  background: black;
+}
+
+.one:hover{
+  background: orange;
+  transform: scale(1.1);
+}
+
+.two{
+  background: blue;
+}
+
+.two:hover{
+  transform: translateY(-10px);
+  box-shadow: 0px 10px 20px rgba(0,0,0,0.3);
+}
+
+.three{
+  background: green;
+}
+
+.three:hover{
+  background: crimson;
+  border-radius: 30px;
+}
+
+/* ---------------- Hover Card Section ---------------- */
+
+.card{
+  width: 320px;
+  height: 380px;
+  border-radius: 18px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+
+.card img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s;
+}
+
+.card:hover img{
+  transform: scale(1.15);
+}
+
+.info{
+  position: absolute;
+  bottom: -130px;
+  left: 0;
+  width: 100%;
+  background: white;
+  padding: 15px;
+  transition: 0.5s;
+}
+
+.card:hover .info{
+  bottom: 0;
+}
+
+.info h3{
+  margin: 0;
+}
+
+.info p{
+  font-size: 13px;
+  color: gray;
+}
+
+.info button{
+  padding: 8px 15px;
+  border: none;
+  background: black;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.info button:hover{
+  background: orange;
+  transform: scale(1.05);
+}
+
+/* ---------------- Navbar Section ---------------- */
+
+.nav-area{
+  background: #111;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+nav{
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+nav a{
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  position: relative;
+  padding: 5px;
+}
+
+nav a::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 3px;
+  background: orange;
+  transition: 0.4s;
+}
+
+nav a:hover::after{
+  width: 100%;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>Mini Projects (Hover + Transition)</h1>
+
+<!-- Buttons -->
+<div class="section">
+  <h2>Mini Project 1: Hover Buttons</h2>
+  <div class="btn-box">
+    <button class="btn one">Button 1</button>
+    <button class="btn two">Button 2</button>
+    <button class="btn three">Button 3</button>
+  </div>
+</div>
+
+<!-- Hover Card -->
+<div class="section">
+  <h2>Mini Project 2: Hover Card</h2>
+  <div class="card">
+    <img src="https://picsum.photos/500/400?random=10" alt="image">
+    <div class="info">
+      <h3>Nature Place</h3>
+      <p>This card uses only hover and transition effects.</p>
+      <button>Read More</button>
+    </div>
+  </div>
+</div>
+
+<!-- Navbar -->
+<div class="section">
+  <h2>Mini Project 3: Navbar Hover Underline</h2>
+  <div class="nav-area">
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+    </nav>
+  </div>
+</div>
+
+</body>
+</html>

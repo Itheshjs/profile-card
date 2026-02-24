@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition property</title>
+    <style>
+        .box{
+            background-color: aqua;
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            transition: transform 1s linear;
+            transition-delay: 1s;
+            
+            
+        }
+        .box:hover{
+           transform: translateY(500px);
+           background-color: rgb(75, 4, 141);
+           
+           
+        }
+
+    </style>
+</head>
+<body>
+    <h1>This is transition property </h1>
+    <div class="box"></div>
+    
+</body>
+</html>

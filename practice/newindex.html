@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio example</title>
+    <style>
+        button{
+            color: rgb(5, 88, 88);
+            background-color: rgb(207, 175, 136);
+            transition: 0.5 ease;
+        }
+
+        button:hover{
+            transform: rotate(120deg);
+            background-color: rgb(120, 220, 19);
+        }
+    </style>
+</head>
+<body>
+    <h1>Play audio in HTML</h1>
+    <audio controls>
+        <source src="kuhu_kuhu_kogile.mp3" type="audio/mpeg">
+
+    </audio>
+
+    <dd>
+        <li>apple</li>
+        <li>orange</li>
+        <li>banana</li>
+
+    </dd>
+
+
+    <table border="5px" style="border-collapse: collapse;">
+        <thead>
+            <tr>
+                <th>ROLL NO</th>
+                <th>NAME</th>
+                <th>BRANCH</th>
+                <th>MARKS</th>
+
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>301</td>
+                <td>kumar</td>
+                <td>CSE</td>
+                <td>66</td>
+            </tr>
+
+            <tr>
+                <td>302</td>
+                <td>ravi</td>
+                <td>EEE</td>
+                <td>88</td>
+            </tr>
+
+             <tr>
+                <td>303</td>
+                <td>shanker</td>
+                <td>EC</td>
+                <td>90</td>
+            </tr>
+
+            <h1>Student Registration</h1>
+            
+        </tbody>
+    </table>
+
+    <br><br><br>
+
+
+    <form>
+        <label>Roll No:</label>
+        <input type="number" name="RollNo" placeholder="enter the Rollno" ><br><br>
+
+
+        <label>Name:</label>
+        <input type="text"  name="Name" placeholder="enter the Name"><br><br>
+
+
+        <label>Father Name:</label>
+        <input type="text" name="Father Name" placeholder="enter the father name"><br><br>
+
+        <label>Date and time:</label>
+        <input type="datetime" name="DateTime" placeholder="enter the datetime"><br><br>
+
+        <label>Mobile No:</label>
+        <input type="number" name="number" placeholder="enter the number"><br><br>
+
+        <label>Gender:</label>
+
+        <input type="radio" name="Male">Male
+        <input type="radio" name="Female">Female
+        <input type="radio" name="other">other
+
+        <br><br>
+
+        <label>Branch:</label>
+        <input type="checkbox" name="CSE">CSE
+
+        <input type="checkbox" name="EEE">EEE
+
+        <input type="checkbox" name="EC">EC
+
+        <input type="checkbox" name="mech">Mech
+
+        <br><br>
+
+
+        <label>Course:</label>
+
+        <select>
+            <option>BE</option>
+            <option>BTECH</option>
+            <option>BSIC</option>
+            <option>COMMERCE</option>
+        </select>
+
+        <br><br>
+
+        <div style="margin-left: 20px;" class="butt">
+            <button type="submit" style="text-align: center;">
+            Submit
+        </button>
+        </div>
+        
+    </form>
+
+
+</body>
+</html>

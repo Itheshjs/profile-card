@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Project - Hover Cards</title>
+
+  <style>
+    body{
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container{
+      display: flex;
+      gap: 20px;
+    }
+
+    .card{
+      width: 220px;
+      height: 300px;
+      background: white;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+      transition: 0.4s;
+      cursor: pointer;
+      position: relative;
+    }
+
+    .card:hover{
+      transform: translateY(-30px);
+      box-shadow: 0px 10px 20px rgba(0,0,0,0.3);
+    }
+
+    .card img{
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      transition: 0.4s;
+    }
+
+    .card:hover img{
+      transform: scale(1.1);
+    }
+
+    .content{
+      padding: 15px;
+      position: absolute;
+      bottom: -60px;
+      width: 100%;
+      background: white;
+      transition: 0.4s;
+    }
+
+    .card:hover .content{
+      bottom: 0px;
+    }
+
+    h3{
+      margin: 0;
+      font-size: 18px;
+    }
+
+    p{
+      font-size: 13px;
+      color: gray;
+      margin: 8px 0;
+    }
+
+    button{
+      padding: 8px 14px;
+      border: none;
+      background: black;
+      color: white;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    button:hover{
+      background: orange;
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="card">
+      <img src="https://picsum.photos/300/200?random=1" alt="">
+      <div class="content">
+        <h3>Mountain View</h3>
+        <p>Beautiful nature place with fresh air.</p>
+        <button>Explore</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://picsum.photos/300/200?random=2" alt="">
+      <div class="content">
+        <h3>Beach Side</h3>
+        <p>Relaxing beach with cool waves.</p>
+        <button>Explore</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://picsum.photos/300/200?random=3" alt="">
+      <div class="content">
+        <h3>City Lights</h3>
+        <p>Modern city view with night lights.</p>
+        <button>Explore</button>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

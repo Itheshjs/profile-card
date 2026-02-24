@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background: red;
+            animation: spin 2s infinite linear;
+            margin-bottom: 20px;
+            
+        }
+
+        @keyframes spin{
+            from{transform: rotate(0deg);}
+            to{transform: rotate(360deg);}
+        }
+
+        .btn{
+            padding: 10px 20px;
+            border: none;
+            background: black;
+            color: white;
+            transition: 0.2s;
+            border-radius: 30px;
+            
+        }
+
+        .btn:hover{
+            background: rgb(1, 43, 57);
+            transform: scale(2);
+            margin: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <button class="btn">Hover me</button>
+</body>
+</html>

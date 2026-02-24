@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border-radius: 50%;
+            animation: bounce 2s infinite;
+            animation-duration: 2s ;
+            margin: auto;
+        }
+        @keyframes bounce{
+            0%{
+        transform: translateY(0);
+    }
+
+    20%{
+        transform: translateY(900px); 
+        box-shadow: 0px 0px 500px blue;  /* First fall */
+    }
+
+    40%{
+        transform: translateY(150px);   /* First bounce high */
+    }
+
+    55%{
+        transform: translateY(500px);   /* Fall again */
+    }
+
+    70%{
+        transform: translateY(250px);   /* Second bounce smaller */
+    }
+
+    85%{
+        transform: translateY(500px);   /* Fall again */
+    }
+
+    95%{
+        transform: translateY(320px);   /* Third bounce smaller */
+    }
+
+    100%{
+        transform: translateY(500px);
+    }
+
+           
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="box"> </div>
+    </div>
+</body>
+</html>

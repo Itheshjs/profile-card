@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .box{
+        width:80px;
+        height: 80px;
+        background: green;
+        animation: grow 2s forwards infinite;
+        animation: colorchange 4s infinite;
+        animation: bounce 2s infinite;
+        margin: auto;
+        border-radius: 50%;
+
+        
+    }
+
+    .box:hover{
+        width:80px;
+        height: 80px;
+        background: rgb(9, 34, 109);
+        border-radius: 50%;
+        box-shadow: 0px 0px 80px red;
+  
+    }
+
+    @keyframes colorchange{
+        0%{
+            background-color: orange;
+           
+            
+        }
+        25%{
+            background-color: brown;
+            
+        }
+        35%{
+            background-color: rgb(118, 7, 140);
+             
+        }
+        50%{
+            background-color: blue;
+            
+            
+        }
+        75%{
+            background-color: rgb(131, 6, 17);
+            
+        }
+        85%{
+            background-color: rgb(136, 136, 7);
+            
+        }
+
+        100%{
+            background-color: aqua;
+            
+        }
+        
+    }
+
+    @keyframes bounce{
+        0%{
+            transform: translateY(0px);
+            background-color: blue;
+        }
+
+        50%{
+            transform: translateY(400px);
+            background-color: aqua;
+            border-radius: 50%;
+            box-shadow: 0px 0px 80px red;
+        }
+
+        100%{
+            transform: translate(0px);
+            background-color: brown;
+        }
+    }
+    </style>
+</head>
+<body>
+    <img src="https://wallpapers.com/images/hd/fifa-background-8u7sbrere6nkue1q.jpg" width="100%" height="100%">
+    <div class="box"></div>
+    <hr style="margin-top: 400px; height: 6px; background-color: green;">
+</body>
+</html>

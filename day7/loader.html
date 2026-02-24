@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .loader{
+            width: 200px;
+            height: 200px;
+            border: 5px solid purple;
+            border-top: 10px solid red;
+            border-bottom: 10px solid red;
+            border-radius: 50%;
+            margin: 50px;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin{
+            from{transform: rotate(0deg);}
+            to{transform: rotate(360deg);}
+        }
+        .box{
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            position: relative;
+            margin: 50px;
+            
+            animation-name:bounce;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        @keyframes bounce{
+            from{top: 0px; background-color: aqua;rotate: 0deg;}
+            to{top:400px;background-color: red;rotate: 360deg;border-radius: 50%;box-shadow: 5px 5px 30px blue;}
+        }
+
+        img{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            align-items: center;
+            box-shadow: 10px 10px 50px purple;
+        }
+    </style>
+</head>
+<body>
+    <div class="loader">
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/024/070/960/small_2x/soccer-football-game-ball-3d-graphic-sport-illustration-ai-generated-free-photo.jpg">
+    </div>
+    <div class="box"></div>
+</body>
+</html>

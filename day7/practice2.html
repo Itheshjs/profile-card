@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 300px;
+            height: 300px;
+            background-color: red;
+            animation: spin 2s infinite;
+            margin: 50px 50px;
+            position: relative;
+        }
+
+        .box2{
+            width: 300px;
+            height: 300px;
+            background-color: red;
+            animation: spin2 2s infinite;
+           
+
+        }
+
+        @keyframes spin{
+            0%{
+                transform: translateX(0px) rotate(0deg);
+            }
+            50%{
+                transform: translateX(3000px) rotate(180deg); border-radius: 50%; background-color: rgb(127, 3, 117); box-shadow: 30px 40px 600px black; animation-delay: 3s;
+            }
+            100%{
+                transform: translateX(0px) rotate(360deg);
+            }
+        }
+
+        @keyframes spin2{
+             0%{
+                transform: translateX(5830px) rotate(0deg);
+            }
+            50%{
+                transform: translateX(3000px) rotate(180deg); border-radius: 50%; background-color: rgb(127, 3, 117); box-shadow: 30px 40px 600px black; animation-delay: 3s;
+            }
+            100%{
+                transform: translateX(5830px) rotate(360deg);
+            }
+
+        }
+
+        .lin{
+            height: 20px;
+            background-color: green;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box2"></div>
+
+    <hr class="lin">
+</body>
+</html>
