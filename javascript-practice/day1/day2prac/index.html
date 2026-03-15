@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user age validation</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <h2>User age validation </h2>
+    <input type="text" id="name" placeholder="enter name">
+    <input type="number" id="age" placeholder="enter the age">
+
+    <button onclick="checkLogin()">Cheak</button>
+
+    <p id="result"></p>
+
+    <script>
+        function checkLogin(){
+            let username = document.getElementById("name").value;
+            let userage = document.getElementById("age").value;
+
+            let result = document.getElementById("result");
+
+            if(userage>=18){
+                result.innerHTML = username  + "your eligible to vote"+userage;
+                result.style.color = "black";
+                result.style.background="red";
+                result.style.padding = "30px";
+            
+            }
+            else{
+                result.innerHTML = username + "your not eligible to vote"+userage;
+            }
+        }
+
+    </script>
+
+</body>
+</html>

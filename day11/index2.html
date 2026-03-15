@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grade Calculattor</title>
+    <style>
+        body{
+            background: linear-gradient(rgb(9, 152, 145));
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 1000px 1000px;
+            background:white
+        }
+        .frame{
+            width: 400px;
+            height: 500px;
+            border: 3px solid black;
+            align-items: center;
+            justify-content: center;
+            background:linear-gradient(135deg,rgb(177, 12, 160) ,rgb(230, 26, 67));
+            border-radius: 20px;
+            align-items: center;
+            padding: 30px 30px;
+            box-shadow: 40px 40px;
+            
+        }
+        h2{
+            color: white;
+        }
+        button{
+            margin-top: 30px;
+            animation:;
+        }
+
+        button:hover{
+            transform:scale(-1.1px);
+        }
+        #id{
+            color: white;
+        }
+        h3{
+            color: white;
+        }
+        input{
+            border-radius: 30px;
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="frame" >
+        <h2>Grade Caluclator</h2>
+        <input type="number" id="marks" placeholder="enter the your marks"><br>
+        <button onclick="calculate()">Cheak Grade</button>
+        <h3 id="result"></h3>
+    </div>
+   
+
+    <script>
+        function calculate(){
+            let marks = document.getElementById("marks").value // user input
+            let grade;
+            if(marks>=90){
+                grade="A";   
+            }else if(marks>=75){
+                grade = "B";
+            }else if(marks>=50){
+                grade = "C";
+            }else{
+                grade = "fail";
+            }
+
+            document.getElementById("result").innerHTML="grade"+grade;
+
+        }
+    </script>
+</body>
+</html>

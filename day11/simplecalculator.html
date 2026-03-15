@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+
+    <style>
+        .frame{
+            width: 400px;
+            height: 500px;
+            border: 2px solid black;
+            padding: 20px;
+            margin: 500px 500px;
+            background-image: url(https://img.freepik.com/premium-photo/abstract-white-background-with-smooth-wavy-lines-flowing-shape-design-transparent-light-gray-tones_174533-88244.jpg);
+            border-radius: 10%;
+            box-shadow: 10px 10px 200px rgb(194, 13, 118);
+        }
+        button{
+            margin-top: 40px;
+            margin-right: 20px;
+            border-radius: 20px;
+            padding: 3px;
+            width: 60px;
+            transition: 1.1 ease;
+        }
+
+        button:hover{
+            transform: scale(1.5);
+            box-shadow: 2px 2px 30px brown;
+        }
+
+        h3{
+            width: 400px;
+            height: 100px;
+            background-color: white;
+            border: 1px solid black;
+            border-radius: 20px;
+            margin-top: 70px;
+            padding:2px;
+        }
+
+        input{
+            border-radius: 20px;
+            height: 30px;
+            transition: 1.1 ease;
+        }
+
+        input:hover{
+            transform: translateY(1px);
+        }
+
+       
+      
+    </style>
+
+</head>
+<body>
+    <div class="frame">
+        <h2>Simple Calculator</h2>
+        <input type="number" id="num1">
+        <input type="number" id="num2"><br>
+        <button onclick="add()" >Add</button>
+        <button onclick="sub()">Sub</button>
+        <button onclick="mul()">Mul</button>
+        <button onclick="div()">Div</button>
+        <button onclick="percentage">%</button>
+        <h3 id="output"></h3>
+    </div>
+
+    <script>
+        function add(){
+            let a=Number(document.getElementById("num1").value);
+            let b=Number(document.getElementById("num2").value);
+
+        let result=a+b;
+        document.getElementById("output").innerHTML="Result"+result;
+
+        }
+
+         function sub(){
+            let a=Number(document.getElementById("num1").value);
+            let b=Number(document.getElementById("num2").value);
+
+        let result=a-b;
+        document.getElementById("output").innerHTML="Result"+result;
+
+        }
+
+         function mul(){
+            let a=Number(document.getElementById("num1").value);
+            let b=Number(document.getElementById("num2").value);
+
+        let result=a*b;
+        document.getElementById("output").innerHTML="Result"+result;
+
+         }
+
+          function div(){
+            let a=Number(document.getElementById("num1").value);
+            let b=Number(document.getElementById("num2").value);
+
+        let result=a/b;
+        document.getElementById("output").innerHTML="Result"+result;
+
+         }
+
+         function percentage{
+            let a=Number(document.getElementById("num1").value);
+            let b=Number(document.getElementById("num2").value);
+
+        let result = a+b;
+
+        if(result/2==0){
+            document.getElementById("output").innerHTML="Result"+result;
+        }
+
+        else(result/2==1){
+             document.getElementById("output").innerHTML="Result"+result;
+        }
+
+         }
+
+
+
+
+    </script>
+    
+</body>
+</html>

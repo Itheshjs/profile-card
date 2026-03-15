@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoping cart Counter</title>
+</head>
+<body>
+    <h2>Shpoing cart</h2>
+    <h3>Card items :<span id="cartcount">0</span></h3>
+
+    <hr>
+    <h4>Product 1- shoes</h4>
+    <button onclick="addtocart()">Add to cart</button>
+
+
+    <h4>product 2 -Bag</h4>
+    <button onclick="addtocart()">Add to cart</button>
+
+    <h4>product 3 - cloth</h4>
+    <button onclick="addtocart()">Add to cart</button>
+
+
+    <script>
+        let count===0;
+
+        function addtocard(){
+            count++;
+            document.getElementById("cartcount").innerHTML=count;
+
+        };
+
+    </script>
+
+</body>
+
+
+
+</html>

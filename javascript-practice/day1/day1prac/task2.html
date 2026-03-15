@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>character counter</title>
+</head>
+<body>
+    <h3>Character counter</h3>
+    <input type="text" id="noText">
+    <button onclick="check()">Cheak</button>
+
+    <h2 id="result"></h2>
+
+    <script>
+        function check(){
+          let i=document.getElementById("noText").value;
+          
+          let final = document.createElement("final");
+
+          final=i.length;
+
+          let result=document.getElementById("result").innerHTML=final;
+
+
+
+
+
+
+        }
+    </script>
+    
+</body>
+</html>

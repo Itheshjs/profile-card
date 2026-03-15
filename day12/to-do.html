@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 100%;
+            height: 100vh;
+            background-image: url(https://static.vecteezy.com/system/resources/previews/027/254/694/original/colorful-abstract-wave-on-transparent-background-png.png);
+            
+        }
+
+    
+        .frame{
+            width: 400px;
+            height: 500px;
+            border: 3px solid white;
+            margin: auto;
+            margin-top: 500px;
+            padding: 20px;
+            text-align: center;
+            align-items: center;
+            border-radius: 30px;
+            box-shadow: 50px 50px 80px black ;
+            background: transparent lightcyan;
+            
+        }
+
+        h2{
+            color:black;
+           
+        }
+
+        ul{
+            color: black;
+            margin-right: 30px;
+        }
+        li{
+            gap: 20px;
+        }
+        input{
+            border-radius: 20px;
+            padding: 10px;
+        }
+        button{
+            border-radius: 20px;
+            padding: 10px;
+            box-shadow: 2px 2px 10px rgb(95, 4, 95);
+            background: green;
+            color: white;
+            
+        }
+        li{
+            margin-right: 60px;
+        }
+    </style>
+</head>
+<body>
+    <div class="frame">
+        <h2>My to do app</h2>
+        <input type="text" id="taskinput" placeholder="enter the task">
+        <button onclick="addTask()">Add </button>
+
+        <ul id="tasklist"></ul>
+    </div>
+
+    <script>
+        function addTask(){
+            let task = document.getElementById("taskinput").value;
+
+            if(task===""){
+                alert("plzz enter the task");
+                return
+            }
+
+            let li = document.createElement("list"); // create new element or list
+
+            li.innerHTML=task;
+
+            let deleteBtn=document.createElement("button");
+            deleteBtn.innerHTML="Delete";
+
+           deleteBtn.onclick=function(){
+            li.remove();
+           }
+            li.appendChild(deleteBtn);
+
+            document.getElementById("tasklist").appendChild(li);
+            document.getElementById("taskinput").value="";
+    
+        }
+    </script>
+</body>
+</html>

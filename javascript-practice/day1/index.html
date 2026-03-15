@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Student Result Cheaker</h1>
+
+    <input type="number" id="marks" placeholder="enter the marks">
+    <button onclick="submission()">cheak</button>
+
+    <h2 id="result"></h2>
+
+    <script>
+       function submission(){
+        
+            let marks = document.getElementById("marks").value;
+
+            
+
+           
+
+            if(marks>=90){
+                message = "Excellent";
+            }
+            else if(marks>=75){
+                message = "Distinction";
+            }
+            else if(marks>=50){
+                message = "pass";
+            }
+
+            else{
+                message = "Fail";
+            }
+       
+
+       document.getElementById("result").innerText=message;
+
+     }
+    </script>
+    
+</body>
+</html>
