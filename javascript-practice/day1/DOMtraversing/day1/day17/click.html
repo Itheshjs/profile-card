@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">Click </button>
+
+    <div id="box" style="width: 200px; height: 200px; background: red;"></div>
+
+    <input id="inp" placeholder="type something">
+
+    <!--change event -->
+
+    <select id="menu">
+        <option>Html</option>
+        <option>css</option>
+        <option>JS</option>
+    </select>
+
+
+    <button id="submit1">Submit</button>
+</body>
+<script>
+    let button = document.querySelector('#btn')
+
+    button.addEventListener("click",function(){
+        alert("button is clicked")
+    })
+
+    let box=document.querySelector("#box")
+
+    box.addEventListener("mouseenter",()=>{
+        box.style.background="green"
+
+    box.addEventListener("mouseleave",()=>{
+        box.style.background="red"
+    })
+    })
+
+
+    let input=document.querySelector("#inp")
+
+    input.addEventListener("keypress",()=>{
+        console.log("key pressed")
+
+    
+    })
+
+
+    //change event
+
+    let menu =document.querySelector("#menu")
+
+    menu.addEventListener("change",()=>{
+        alert("changed the option")
+    })
+
+
+    let submit1=document.querySelector("#submit1")
+
+    submit1.addEventListener("submit",()=>{
+        alert("submitted")
+    })
+
+    
+
+    
+</script>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: sans-serif;
+        }
+        .modelDiv{
+            position: fixed;
+            top: -1000px;
+            transition: 0.5s;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 350px;
+            height: 400px;
+            border: 1px solid black;
+            box-shadow: 0px 0px 10px 3px red;
+            animation-name: slide-down;
+            animation: 1.1 ease;
+        }
+
+        @keyframes slide-down{
+            0%{
+                transform: translateY(-100pz);
+            }
+            50%{
+                transform: translateY(0px);
+            }
+            100%{
+                transform: translateY(50px);
+            }
+        }
+        .modelDiv h2{
+            text-align: center;
+            padding: 10px 0px;
+            position: relative;
+        }
+
+        .modelDiv h2 span{
+            position: absolute;
+            right: 0px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <button>show model</button>
+    <div class="modelDiv" >
+        <h2>Enqire now <span>&times;</span></h2>
+    </div>
+
+    <script>
+        let ButtonShow=document.querySelector("button")
+        let modelDivShow=document.querySelector(".modelDiv")
+        let closeBtn=document.querySelector(".modelDiv span")
+
+        ButtonShow.addEventListener("click",()=>{
+            modelDivShow.style.top="50%"
+
+        })
+
+        closeBtn.addEventListener("click",()=>{
+            modelDivShow.style.top="-1000px"
+        })
+    </script>
+</body>
+</html>

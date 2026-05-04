@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: sans-serif;
+            box-sizing: border-box;
+
+        }
+        .main{
+            width: 1000px;
+            margin: auto;
+        }
+        .main textarea{
+            width: 100%;
+            padding: 20px;
+            height: 200px;
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <textarea name="" id=""></textarea>
+        <h2>Lenght-<span>0</span></h2>
+        <div id="resDIV"></div>
+    </div>
+</body>
+<script>
+    let textareaElement=document.querySelector("textarea")
+
+    let lenElement=document.querySelector("h2 span")
+
+    let resDIVElement=document.querySelector("#resDIV")
+
+    textareaElement.addEventListener("keyup",()=>{//keyup working is execute the action whenecer a writing on dashboard
+       resDIVElement.innerHTML=textareaElement.value
+       lenElement.innerHTML=textareaElement.value.length
+
+    })
+</script>
+</html>

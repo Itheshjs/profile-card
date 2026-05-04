@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // for(let i=1;i<=5;i++){
+        //     for(let j=1; j<=10; j++){
+        //         console.log(i, j, `${i}*${j}=${i*j}`);
+        //     }
+        // }
+
+    //    for(let i=5; i>=1; i--){
+    //     for(let j=1; j<=i; j++){
+    //         document.write("*");
+    //     }
+    //     document.write("<br>");
+    //    }
+
+    // for(i=1; i<=50; i++){
+    //    if(i%2==0){
+    //     document.write(i,"even number <br>");
+    //    }
+    // }
+
+
+    // let num=Number(prompt("enter the number"));
+
+    // let midvalue=parseInt(num/2);
+    // //using parseint we can take only number not a float value
+    
+
+
+    // let sum=0;
+    
+
+    // for(let i=1; i<=midvalue; i++){
+    //     if(num%i==0){
+    //         console.log(i);
+    //         sum+=i;
+    //     }
+    // }
+
+
+
+    // if(sum==num){
+    //     console.log(num,"is a perfect number");
+    // }else{
+    //     console.log(num,"is not a perfect number");
+    // }
+
+    // let num=Number(prompt("enter the number"));
+
+    // let result=result.reverse(num);
+
+    // console.log(result);
+
+    // let num=4678;
+    // let revNumber=0;
+
+    // while(num>0){
+    //     let lastDigit=num%10;
+    //     revNumber=revNumber*10+lastDigit;
+    //     num=parseInt(num/10);
+    // }
+
+    // console.log(revNumber);
+
+//   let count=0;
+//   for(let i=1; i<=5; i++){
+//     for(let j=1; j<=i; j++){
+//         document.write(count);
+//         count++;
+       
+//     } 
+//     document.write("<br>");
+//   }
+
+let num = 12345
+
+reverse=0
+
+while(num>0) {
+    let digit = num%10
+    reverse=reverse+num*digit
+    num=parseInt(num)
+}
+document.write(reverse)
+
+
+
+    </script>
+</body>
+</html>

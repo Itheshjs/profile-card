@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do App</title>
+</head>
+<body>
+
+    <h1>My To-Do List</h1>
+
+    <input type="text" id="taskInput" placeholder="Enter task">
+    <button id="addBtn">Add Task</button>
+
+    <ul id="taskList"></ul>
+
+    <script>
+        let addBtn = document.getElementById("addBtn");
+        let taskInput = document.getElementById("taskInput");
+        let taskList = document.getElementById("taskList");
+
+        let tasks = [];
+
+        addBtn.addEventListener("click", function(){
+
+            let task = taskInput.value;
+
+            if(task === ""){
+                alert("Please enter a task");
+                return;
+            }
+
+            tasks.push(task);
+
+            displayTasks();
+
+            taskInput.value = "";
+        });
+
+        function displayTasks(){
+
+            taskList.innerHTML = "";
+
+            for(let i = 0; i < tasks.length; i++){
+
+                let li = document.createElement("li");
+                li.innerText = tasks[i];
+
+                taskList.appendChild(li);
+            }
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+
+    </h1>
+</body>
+<script>
+    let currentDate=new Date()
+    console.log(currentDate.getFullYear())
+    console.log(currentDate.getMonth()) //in js month count from(0-11)
+    console.log(currentDate.getDay())
+    console.log(currentDate.getHours()<12 ? currentDate.getHours()<12 : currentDate.getHours()-11 )
+    console.log(currentDate.getMinutes())
+    
+
+    console.log(currentDate.toLocaleDateString())
+
+    console.log(currentDate.toLocaleTimeString())
+
+    let h1Element=document.querySelector("h1")
+    
+    
+
+    let dclock=()=>{
+        let currentDate = new Date()
+        h1Element.innerHTML=currentDate.toLocaleTimeString()
+    }
+
+    setInterval(dclock,1000)
+</script>
+</html>

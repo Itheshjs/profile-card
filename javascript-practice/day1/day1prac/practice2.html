@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>word counter</h2>
+    <input type="text" id="wordid">
+    <button onclick="add()">Cheak</button>
+
+    <h1 id="result"></h1>
+</body>
+<script>
+    function add(){
+        let i=document.getElementById("wordid").value;
+        let final=document.createElement("final");
+
+        final=i.length;
+
+        let result=document.getElementById("result").innerHTML=final;   
+    }
+</script>
+</html>

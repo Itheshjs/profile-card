@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="name" placeholder="enter the name">
+
+    <p id="output">0</p>
+</body>
+
+<script>
+    let inputbox = document.querySelector("#name")
+
+    let outputbox = document.querySelector("#output")
+
+
+    inputbox.addEventListener("keyup",function(){
+       outputbox.innerText=inputbox.value.length
+    })
+</script>
+</html>

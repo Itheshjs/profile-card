@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //    let l=[10,20,30,40]
+
+    //    let newArray = l.map((num)=>num+num)
+
+    //    console.log(newArray)
+
+    // let l=[12,3,4,5,7,6]
+
+    // let newresult = l.filter((num)=>num%2==0)
+
+    // console.log(newresult)
+
+    const student=[
+        {name:"Amit",marks:70},
+        {name:"Riya",marks:30},
+        {name:"Rahul",marks:25}
+    ]
+    //find return  the first  satisified condition . main thing in this if we using in this 
+    //in key and value need value.marks <- like this need be use without this it did'n give the answer for question  
+
+    let firstFailedStudent=student.find((value)=>value.marks<30) 
+
+    console.log(firstFailedStudent)
+
+   
+    </script>
+</body>
+</html>

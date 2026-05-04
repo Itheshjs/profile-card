@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<form id="myForm">
+  <input type="text" placeholder="Enter your name" id="name">
+  <button type="submit">Submit</button>
+</form>
+
+<script>
+
+let form = document.querySelector("#myForm")
+
+form.addEventListener("submit", function(event){
+
+    event.preventDefault()   // stops page reload
+
+    let name = document.querySelector("#name").value
+
+    console.log("Form submitted")
+    console.log("Name:", name)
+
+})
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark and light Theme</title>
+</head>
+<body>
+
+    <button id="Dark">Dark</button>
+    <button id="light">lightk</button>
+    <h1>Welcome to Ws</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt tenetur fugit quo voluptate quas officia beatae in iusto vel. Nobis necessitatibus autem asperiores facilis hic fugit blanditiis quidem repellat! Reprehenderit.</p>
+    
+</body>
+
+<script>
+    let darkBtn=document.querySelector("#Dark")
+
+    darkBtn.addEventListener("click",()=>{
+        document.body.style.background="black"
+        document.body.style.color="white"
+    })
+
+    let lightBtn=document.querySelector("#light")
+
+    lightBtn.addEventListener("click",()=>{
+        document.body.style.background="white"
+        document.body.style.color="black"
+    })
+ 
+</script>
+</html>

@@ -1,0 +1,22 @@
+<input id="username" placeholder="Enter username">
+<p id="msg"></p>
+
+<script>
+
+let username = document.querySelector("#username")
+let msg = document.querySelector("#msg")
+
+username.addEventListener("blur", function(){
+
+    if(username.value === ""){
+        msg.innerText = "Username is required"
+        msg.style.color = "red"
+    }
+    else{
+        msg.innerText = "Looks good"
+        msg.style.color = "green"
+    }
+
+})
+
+</script>

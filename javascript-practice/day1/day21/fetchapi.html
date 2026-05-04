@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>local storage</title>
+</head>
+<body>
+    <!--Local storage in java script-->
+    <!--What is local storage-->
+    <!--how do we store data in the browser-->
+    <!--how do we retrive the data later-->
+    <!--how is a string stored in the browser-->
+    <!--how do we store an array-->
+    <!--how do we store object-->
+
+
+    <button>White</button>
+    <button>Red</button>
+    <button>Black</button>
+</body>
+<script>
+
+    let bodyElement=document.querySelector("body")
+
+    let allBtns=document.querySelectorAll("button")
+
+    allBtns.forEach((btn)=>{
+        btn.addEventListener("click",()=>{
+
+            localStorage.setItem("COLORTHEME",btn.innerHTML.toLocaleLowerCase())
+            localStorage.setItem("TIME",new Date().toLocaleTimeString())
+            setColorThemeBody()
+        })
+    })
+
+    let setColorThemeBody=()=>{
+        let color=localStorage.getItem('COLORTHEME')
+        bodyElement.style.background=color
+    }
+    setColorThemeBody()
+
+
+    console.log(localStorage.key(1)) //acceasing location from bottom to up 
+    //means TIME: location is 0 and ,COLORTHEME:1
+
+
+    //What is LocalStorage
+    //browser feature for storing data persistently on the client-side
+    //data is saved as key-value pairs
+    //No experiration data-stays until deleted
+    //Size limit :5-10(varies by browser)
+
+
+    //exmaple use Cases
+    //save user preferences(theme,language)
+    //keep cart items in e-commerce sites
+    //store form data temporarily
+
+    //localStorage.setItem("USERNAME","WS")
+
+    console.log(localStorage.getItem('USERNAME'))
+
+
+
+
+    //storing object in LocalStorage
+
+    //localStorage stores strings only 
+    //covert object -> JSON
+
+
+    //so we use 
+    //let user ={name:"pradeep","age":25};
+    //localstorage.setItems("user",JSON.stringify(user))
+
+
+    //let data=JSON.parse(localstorage.getItem("user"))
+
+
+    let user={
+        userName:"ws",
+        userEmail:"ws@gmail.com"
+    }
+
+    localStorage.setItem("USER",JSON.stringify(user))
+
+    let getUserData=JSON.parse(localStorage.getItem("USER"))
+    console.log(getUserData,typeof(getUserData))
+</script>
+</html>

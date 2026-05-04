@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <script>
+        /*array is special varible can store multiple values*/
+
+        // let users=["sachin","virat","rohit","dhoni"];
+        // console.log(users[3]);
+
+
+        /* if we want to get array value then we use the index value*/
+
+        // let l=[10,20,30,40,50,[60,70,80]];
+        // console.log(l[5][0]);
+
+        /* iteration meaning taking array value one by one*/
+
+        // let users=["sachin","virat","rohit","dhoni"]
+        /*for,for in for of*/
+
+
+        // let users=["sachin","virat","rohit","dhoni"];
+        // let t=users.length;
+        
+
+        // for(let i=0; i<t;i++){
+        //     console.log(i,users[i] );
+        // }
+
+    //     let l=[10,20,30,40,50,60,70,80];
+
+    //     // of is used to get the value of array one by one
+    //     for(let v of l){
+    //         console.log(v);
+    //     }
+
+    //     // in is used to get the index value of array one by one
+    //     sum=0;
+    //    for(let v in l){
+    //     sum+=v;
+    //     console.log(v,l[v]);
+    //    }
+    //    console.log(sum);
+
+        //   let l=[10,20,30,40,50,60,70,80];
+        //   let sum=0;
+        //   for(let v of l){
+        //     sum+=v;
+        //     console.log(v);
+        //   }
+        //   console.log(sum);
+
+        // let l=[10,20,30,21,40,50,60,70,80];
+        // for(let v of l){
+        //     if(v%2==0){
+        //         console.log(v);
+        //     }
+        // }
+
+        // let l=[1,2,3,4,5]
+        // console.log(l);
+        // l[1]=20;
+        // console.log(l);
+
+
+        // array methods
+        //1) push() add one or two element at end of the array
+        //2)pop() remove the last element of the array 
+        //3)shift(): remove the first elemennt of the array 
+        //4)unshift(): add one or more element at the start of the array
+        //splice(): add or remove element from the array at any position //splice add or more element in array at any postition 
+        //sort(): sort the element of the array in place
+        //reverse(): reverse the order of the in an array in place
+
+        //fill{}: fill the element of the array from a start index to end index with a static value
+
+
+        // let l=[10,20,30,40,50];
+        // l.push(60,70);
+        // console.log(l);
+
+
+        // let l=[1,2,3,4,5];
+
+        // l.splice(3,0,6,7)
+
+
+        // console.log(l);
+        // 1:position meaning index value
+        // 2:number of element we want to remove
+        //3:adter the 2nd value we can add one or more element in the array
+
+        // l.shift();
+        // l.shift();
+        // console.log(l);
+        // l.unshift(1,2);
+        // console.log(l);
+
+
+        // let l=[33,22,11,44,55];
+        // l.sort();
+        // console.log(l);
+        //sort is used to sort lowest to highest 
+        //.sort().reverse() is used to highest to lowest 
+
+
+        // let l=[33,22,11,44,55];
+
+        // l.fill(5)
+        // console.log(l);
+
+        //replace all value with fill value
+
+        let l=[33,22,11,44,55];
+        l.fill(5,0,2);
+        console.log(l);
+
+
+
+    </script>
+    
+</body>
+
+</html>

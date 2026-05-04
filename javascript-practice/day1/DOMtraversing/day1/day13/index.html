@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //destructuring
+        //pull out property into varible 
+        // let user={
+        //     userEmail:'example@gmaile.com',
+        //     userAddress:"jodpur",
+        //     userPhone:9999999,
+        //     userStatus:true,
+
+        // }
+        // let {userEmail:Emaile,userAddress}=user
+        // console.log(Emaile)
+
+
+
+        //rest operator used take of all detaile using ... i give output in the form of object
+        //The rest operator(...) collect all the other properties that weren't picked 
+
+        // let user={
+        //     userEmail:'example@gmaile.com',
+        //     userAddress:{
+        //         cityName:"Jodpur",
+        //         state:"Raj",
+        //         country:"india"
+
+        //     },
+        //     userName:"Ithesh js"
+        // }
+
+        //     let {userAddress:{cityName,state,country}}=user
+
+
+        //     console.log(state)
+
+        
+        // let {userEmail, ...otherDetailes}=user
+        // console.log(userEmail);
+        // console.log(otherDetailes);
+
+
+        //Nested Destructing with object in javascript 
+
+
+
+
+
+
+        //Array destructuring 
+
+        // let colors=["red","green","blur"]
+
+        // let [firstColor,secondColor]=colors
+        // //[] inside this any name can be given in array distructuring first value is stored inside the varible 
+
+        // console.log(firstColor)
+        // console.log(secondColor)
+
+        // let l=[10,20,30,40,50]
+        // let [,,a]=l
+
+        // // , is used to skip the elemment 
+
+        // console.log(a)
+
+
+        // let l=[10,20,30,40,50]
+
+        // let [a,...rest]=l
+
+        // console.log(a,rest);
+
+        //id data in the form of array it give ouput in the form of array or id it's in form of object then it give output in the form of object 
+
+
+        // let l=[1,2,3,4,5]
+        // let m=l //decopy means copy value with it's behaviour 
+
+        // console.log(l)
+        // console.log(m)
+
+        // m.push(36)
+        //decopy means change in m also appear in l
+        // console.log(m)
+        // console.log(l)
+
+        //in this i pushed value to the m but in l also changed becouse of the behaviour also colled decopyy
+        
+        // let l=[10,20,30]
+
+        // let [first,,third]=l
+
+        // console.log(first,third)
+
+
+        // const user = {
+        //     name:"Lia",
+        //     address:{
+        //         city:"Tokya"
+        //     }
+        // }
+
+        // let{address:{city}}=user
+
+        // console.log(city)
+
+        const a=[ 1,2 ];
+        const b=[3,4];
+
+        console.log(...a,...b)
+
+        l1= [25,...a,...b,30] //spred
+        console.log(l1)
+    </script>
+</body>
+</html>

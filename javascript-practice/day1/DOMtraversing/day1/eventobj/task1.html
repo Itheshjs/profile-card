@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event object</title>
+    <style>
+        .main{
+            width: 1000px;
+            height: 500px;
+            margin: auto;
+            border: 1px solid red;
+        }
+
+    </style>
+</head>
+<body>
+    <!--Event object-->
+    <!--the browser sends an object to the event handler with information about what happend-->
+    
+    <div class="main">
+        <h1>Welcome to ws</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem magni illum repellendus id nam iusto amet provident unde, debitis quo vero dolorum quam totam quasi accusantium! Eum dolores cumque quod.
+
+        </p>
+        <button>Read More</button>
+    </div>
+</body>
+<script>
+    let maiElement=document.querySelector(".main")
+
+    maiElement.addEventListener("click", ( event) =>{
+        if(event.target.tagName=="BUTTON"){
+            alert("hello")
+        }
+    })
+
+    //if we use target then when we move curser on screen then  it show which one is touched 
+    //clientx tell in x-axis where it toched then it show from right or left how much px 
+    //event is an object send by the browser 
+
+    //event delegation
+    //
+</script>
+</html>

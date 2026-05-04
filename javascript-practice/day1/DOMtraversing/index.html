@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <input type="password" placeholder="name*" id="password">
+    <button  id="btn">Show</button> -->
+
+    <button>save</button>
+    <h1>Welcome to ws</h1>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum assumenda magni aliquid sequi accusantium necessitatibus omnis ab accusamus laboriosam, nihil hic recusandae officiis. Dignissimos maxime dolor fugit itaque minus non.</p>
+
+
+    <button id="btnStyle">CSS Style</button>
+
+
+
+    <script>
+
+        // let inputElementName=document.querySelector("#password")
+        // let inputElementbtn=document.querySelector("#btn")
+        // function showHidePassword(){
+        //     if(inputElementbtn.innerHTML=="Show"){
+        //       inputElementName.type="text"
+        //       inputElementbtn.innerHTML="hide"
+        //     }
+        //     else{
+        //        inputElementName.type="password"
+        //        inputElementbtn.innerHTML="Show"
+        //     }
+
+        // }
+
+
+        //addEventListener()
+        //used to attach events like click,input,mouseover
+
+        //syntax
+        //element.addeventlistener("event",callback);
+
+        // inputElementbtn.addEventListener("click",()=>{
+        //      if(inputElementbtn.innerHTML=="Show"){
+        //       inputElementName.type="text"
+        //       inputElementbtn.innerHTML="hide"
+        //     }
+        //     else{
+        //        inputElementName.type="password"
+        //        inputElementbtn.innerHTML="Show"
+        //     }
+
+        // })
+
+        // let btn=document.querySelector("button")
+        
+
+        // btn.addEventListener("click",()=>{
+        //     headingElementData=headingElement.innerHTML
+        //     paraElementData=paraElement.innerHTML
+
+        //     headingElement.innerHTML=paraElementData
+        //     paraElement.style.color="red"
+        // })
+
+        
+        let paraElement=document.querySelector("p")
+        let btnStyleElement=document.querySelector("#btnStyle")
+
+        btnStyleElement.addEventListener("click",()=>{
+            paraElement.style.color="red"
+            paraElement.style.fontSize="30px"
+        })
+
+    </script>
+</body>
+</html>

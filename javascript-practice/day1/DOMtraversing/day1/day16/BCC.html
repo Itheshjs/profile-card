@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cocloe changer</title>
+</head>
+<body style="background: rgb(99,77,90)">
+    <button>Color Changer</button>
+</body>
+<script>
+
+    let body=document.querySelector("body")
+    let button=document.querySelector("button")
+
+    button.addEventListener("click",()=>{
+
+        let redCode=Math.floor(Math.random()*255) //if we use math.random it generate the random number from  0 to 1  ans come in a form of 127.4 but we want ans in form of int (example:127) . so math.floor example 9.9->9.5.1->5 it goes down . same have math.ceil help increse mean if we have 6.6 it ans will be 7 ans 6.3 it's ans will be 7
+        let greenCode=Math.floor(Math.random()*255) // im thing doen't forget in math ->m should be capital letter M
+        let blueCode=Math.floor(Math.random()*255)
+        body.style.background=`rgb(${redCode},${greenCode},${blueCode})`
+    })
+
+</script>
+</html>

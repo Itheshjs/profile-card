@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #f0f0f0;
+            color: #333;
+            text-align: center;
+        }
+        h1{
+            color: #4CAF50;
+            margin-top: 20px;
+        }
+        .mainTodoList{
+            width: 70%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        input[type="text"]{
+            width: 70%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button{
+            padding: 10px 15px;
+            margin-left: 10px;
+            border: none;
+            border-radius: 4px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+        li span{
+            text-decoration: line-through;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>My ToDo List</h1>
+    <div class="mainTodoList">
+        <div>
+            <input type="text" id="todoInput" placeholder="add a new task...">
+            <button id="addTodoBtn">Add Task</button>
+        </div>
+
+        <ul id="todoList">
+            <li><span>1 HTML</span>  <button>&times;</button></li>
+        </ul>
+    </div>
+</body>
+<script>
+    let addBtn = document.querySelector("#addTodoBtn")
+    let todoInput = document.querySelector("#todoInput")
+    let todoListUl = document.querySelector("#todoList")
+
+    // ✅ FIX 1: use JSON.parse instead of stringify
+    let todoList = localStorage.getItem("TODO") 
+        ? JSON.parse(localStorage.getItem("TODO")) 
+        : []
+
+    // ❌ REMOVED wrong forEach block here (it was causing error)
+
+    addBtn.addEventListener("click", () => {
+        let obj = {
+            title: todoInput.value,
+            isStatus: true
+        }
+
+        todoList.push(obj)
+
+        localStorage.setItem("TODO", JSON.stringify(todoList))
+
+        showAllToList()
+    })
+
+    let showAllToList = () => {
+        // ✅ FIX 2: don't redeclare todoList
+        let list = ''   // ✅ FIX 3: initialize list
+
+        todoList.forEach((item, index) => {
+            list += `<li>${index+1} <span>${item.title}</span>  <button>&times;</button></li>`
+        })
+
+        todoListUl.innerHTML = list
+    }
+
+    showAllToList()
+</script>
+</html>

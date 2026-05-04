@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--setIntervals is used for repeated work instead of setTimeout->which is used to single time-->
+</body>
+
+<script>
+    let t=1
+    let getdata=()=>{
+        console.log(t,"welcome to ws")
+        t++
+        if(t==10){
+            clearInterval(myInterval)
+        }
+        console.log(t,"welcome to ws")
+        t++
+    
+    }
+    let myInterval= setInterval(getdata,1000)
+
+    //setinter5val is used to repeated work instead of setTimeout which is used to execute single time
+
+
+</script>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Marks Calculation</h1>
+
+    <button id="btn">Calculate</button>
+
+    <h2 id="result"></h2>
+
+    <script>
+
+        let button = document.getElementById("btn");
+
+        button.addEventListener("click" , function(){
+            let marks = [85,88,98,96,77];
+
+            let total = 0;
+
+            for(let i=0; i<marks.length;i++){
+            total = total + marks[i];
+
+        }
+        let average = total/marks.length;
+
+        document.getElementById("result").innerText=" Total ="+ total + " | Average = "+average;
+    })
+    </script>
+    
+</body>
+</html>

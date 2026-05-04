@@ -1,0 +1,11 @@
+attribut 
+-type
+=placholder
+-required
+
+
+//queryselectorAll()
+-select all matching element 
+-returns a nodelist and array
+
+//nodelist means it make a list 

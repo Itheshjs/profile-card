@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: block;
+        }
+        img{
+            width: 60px;
+            height: 60px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Items adding</h2>
+
+
+    <img src="https://www.upack.in/media/catalog/product/cache/1b6285b0519a2e4e16a97e58faf7625a/c/l/cloth_bag1_2.jpg " alt="Cloth Bag">  
+    <button onclick="addbag()">Add to Cart</button>
+
+
+    <img src="https://redtape.com/cdn/shop/files/RSL0794A_1.jpg?v=1758879354">
+    <button onclick="addshoes()">Add to Cart</button>
+
+
+    <img src="https://www.bbassets.com/media/uploads/p/xl/40024401_7-laplast-plastic-bucket-various-bright-colours.jpg" alt="Plastic Bucket">
+    <button onclick="addbucket()">Add to Cart</button>
+
+    
+    <h3 id="result"></h3>
+
+</body>
+<script>
+    li=0;
+    function addbag(){
+        li=li+1;
+        result.innerHTML="Total"+li;
+    }
+
+    function addshoes(){
+        li=li+1
+        result.innerHTML="Total"+li;
+    }
+
+    function addbucket(){
+         li=li+1
+        result.innerHTML="Total"+li;
+    }
+
+</script>
+</html>

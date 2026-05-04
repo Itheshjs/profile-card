@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task1</title>
+</head>
+<body>
+    <script>
+        // let l=[22.33,43,55,65,77]
+        // let finalarray=[]
+
+        // let t=l.length
+
+        // for(let i=t-1; i>=0; i--){
+        //     finalarray.push(l[i]);
+        // }
+        // console.log(finalarray)
+
+        //function is the reusable block of code designed to perform a perticular task
+
+
+    //     function displayData(){
+    //         document.write("welcome to ws")
+    //     }
+
+    //     displayData()
+
+
+    //    function showName(){
+    //     alert("welcomeTech")
+    //    }
+
+    //    showName()
+
+
+    //function with parameter
+
+    // function addData(a,b=1){
+    //     console.log(a+b)
+    // }
+
+    // addData(5)
+
+
+    // function showname(namey){
+    //     document.write("my name is"+"  "+namey)
+    // }
+
+    // showname("ravi")
+
+   // ... help to take all parameter so we use ...  show all that value in the form of the array
+
+//    function sumData(...allParam){
+//     console.log(allParam)
+//    }
+
+//    sumData(10,20,33,44,55)
+
+   //if we use return it take back result 
+   
+//   
+
+// function textCal(price){
+//     return price*.10
+// }
+
+// let productPrice=50000
+// let total = textCal(productPrice)+productPrice
+
+// console.log(total)
+
+
+//An Anonymous Function is Function without name
+
+//example
+
+//normal function 
+
+// function add(a,b){
+// return a+b
+// }
+//add(5,6)
+
+
+//Anonymous Function
+//let sum = function(a,b){
+// return a+b
+//};
+//console.log(sum(5,3)) // like previous here not used add some time Anonymous Function run immediatly
+//in this Anonymous function function is stored inside the varible which we can call anytime and run 
+
+
+// let display = function(){
+//     console.log("welcome")
+// }
+// display()
+
+
+
+//callback Function 
+//A callback is a function to another function as an argument and executed later
+//callback function is a function that is passed as an argument to another function and execute later 
+
+//A function that is called inside the another function 
+//function is a function  that works inside of other parameter 
+
+
+// function addData(num1,num2){
+//     return num1+num2
+// }
+
+// function minData(num1,num2){
+//     return num1-num2
+// }
+
+// function calculate(num1,num2,callback){
+//     console.log(num1)
+//     console.log(num2)
+//     console.log(callback)
+
+// }
+
+// calculate(10,10,addData)
+
+
+
+
+//Arrow function offer shorter syntax than reqular function 
+
+//const functionName = (param1,param2)=>{
+// code
+//}
+
+
+
+
+// 
+
+// let addData=(n,m)=>n+m
+// console.log(addData(10,20))
+
+// const square =x=>x*x; // if a single value then no need to use paranthesis
+
+
+// let sqr=x=>x*x // if we have single parameter then we need not be use paranthesis
+// console.log(sqr(5));
+
+// let string = "aaramenagariiea"
+// let count=0
+
+// for(let l of string){
+
+//     if(l=="a"){
+//         count=count+1
+//     }
+//     else if(l=="e"){
+//         count=count+1
+//     }
+//      else if(l=="i"){
+//         count=count+1
+//     }
+//      else if(l=="o"){
+//         count=count+1
+//     }
+//      else if(l=="u"){
+//         count=count+1
+//     }
+ 
+// }
+// console.log(count);
+
+// let vowelsLetters="aeiouAEIOU"
+// let cheakVowelsCount=(str)=>{
+//     let count=0
+//     for(let v of str){
+//         if(vowelsLetters.includes(v)){
+//             count++
+//         }
+//     }
+//     return count
+
+// }
+
+// console.log(cheakVowelsCount("welcome tows"))
+
+//includes is used to cheak if that latter that present in or not
+
+
+let vowelsLetter = "aeiouAEIOU"
+
+let cheakVowelsCount=(str)=>{
+    let count=0
+    for(let v of str){
+        if(vowelsLetter.includes(v)){
+            count++ //includes() is a method used to cheak wheter value exist in tha array or string 
+        }
+        
+    }
+    return count
+
+}
+
+console.log(cheakVowelsCount("weelcome to ws"))
+
+
+    </script>
+</body>
+</html>

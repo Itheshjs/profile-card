@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Bubbling with stopPropagation</title>
+    <!--an event first occures on target element and then parent then grandparent and then document->window-->
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .productCard{
+            width: 200px;
+            box-shadow: 0px 0px 10px 2px red;
+        }
+        .productCard img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="productCard">
+        <img src="https://th.bing.com/th/id/R.16fa05e0801cc874d87b43c4c925c262?rik=HSzEvWAoU5DoXg&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2f1%2f0%2f1%2f1199742-4k-ultra-hd-nature-wallpaper-3840x2160-computer.jpg&ehk=pHDE60iWFxiAo8JfimeETr6E9vPQhdDNKBQ2fkaHgIw%3d&risl=&pid=ImgRaw&r=0" alt="">
+        <h2>Nature</h2>
+        <button>Add to cart</button>
+    </div>
+</body>
+
+<script>
+    let productCard = document.querySelector(".productCard")
+    let btn=document.querySelector("button")
+
+    productCard.addEventListener("click",()=>{
+        console.log("product Detaile")
+
+    })
+
+    btn.addEventListener("click",(e)=>{
+        
+        console.log("add to cart")
+        e.stopPropagation() // this event bubbling if we click button then only work that uf press other it doesn't going to work
+         //stopPropagation doesn't alow to take it's paren property
+    })
+</script>
+</html>

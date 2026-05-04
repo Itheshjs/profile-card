@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+        .main{
+            width: 1000px;
+            height: 500px;
+            background: red;
+
+        }
+     </style>
+</head>
+<body>
+    <div class="main"></div>
+    <script>
+        //an event is an action performed on web page such as clicking ,typing ,scroling
+
+        let mainElement=document.querySelector(".main")
+        mainElement.addEventListener("mouseenter",()=>{
+            mainElement.style.background="pink"
+
+        mainElement.addEventListener("mouseleave",()=>{
+            mainElement.style.background="red"
+        })
+        })
+
+
+        let body = document.body
+
+        body.addEventListener("contextmenu",()=>{
+            console.log("welcome")
+        })
+
+
+        //keyboard events
+
+        //keydown->key pressed
+        //keyup->key released
+        //keypress->key pressed
+
+        
+
+
+        //Form events
+        //submit:Form submitted
+        //change: value changed(select ,cheakbox,etc
+        //input:value entered relatime 
+        //focus: input get focus
+        //blur input lose focus
+
+
+
+        //window /Document event
+        //load:page fully loaded
+        //scroll: page scorll
+        //resize: window size change
+
+
+        window.addEventListener("load",()=>{
+           mainElement.style.display="block" 
+        })
+
+        //Event object
+        //the browser sends an object to the event handler with information about what happend
+    </script>
+</body>
+</html>

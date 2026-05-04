@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Dom traversing is the process of navigation throught the dom tree to acess parent ,child ,or sibling element and nodes-->
+
+    <!--Downchild(to child element)-->
+
+    <!--element.children:retirn an HTML collection of child elements-->
+
+    <!--element.firstelemmentChild:return the first element -->
+
+    <!--element.lastElementChild:return the last element -->
+
+    <div class="main">
+
+
+        <h1>Welcome to ws</h1>
+        <button>Save</button>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste deserunt doloremque commodi sequi illo repellat accusamus saepe eos? Itaque cum eum odio cumque sapiente commodi voluptatem nulla dolorum ut asperiores!</p>
+    </div>
+
+</body>
+
+<script>
+
+    //node based traversing
+
+    let mainElement=document.querySelector(".main")
+    console.log(mainElement.firstChild);
+    // let btnElement=document.querySelector("button")
+
+    //  console.log(btnElement.previousElementSibling);
+
+    // console.log(btnElement.nextElementSibling);
+
+
+    // //upword
+    // let btnElement=document.querySelector("button")
+
+    // console.log(btnElement.parentElement);
+    // console.log(btnElement.closest(".main").parentElement)
+    // //
+
+    // //sideway(to sibling)
+
+
+
+
+
+
+    // let mainElement=document.querySelector(".main")
+
+    // Array.from(mainElement.children).forEach((items)=>{
+    //     console.log(items)
+    // })
+    // for(let v of mainElement.children){
+    //     console.log(v)
+    // }
+</script>
+</html>

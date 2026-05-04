@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body style="text-align:center; font-family:Arial;">
+
+<h2>To Do List</h2>
+
+<input id="task">
+<button onclick="add()">Add</button>
+
+<ul id="list"></ul>
+
+<script>
+function add(){
+    let t = task.value;
+    if(t=="") return;
+
+    list.innerHTML += 
+    `<li onclick="this.classList.toggle('done')">
+        ${t} 
+        <button onclick="this.parentElement.remove()">X</button>
+     </li>`;
+
+    task.value="";
+}
+</script>
+
+<style>
+.done{
+    text-decoration: line-through;
+    color: gray;
+}
+</style>
+
+</body>
+</html>
